@@ -9,7 +9,7 @@ from .logger import LogWriter
 # Definition in `timeit` module
 if sys.platform == "win32":
     # On Windows, the best timer is time.clock()
-    default_timer = time.clock
+    default_timer = time.time
 else:
     # On most other platforms the best timer is time.time()
     default_timer = time.time
